@@ -103,7 +103,25 @@ namespace comp123_s2017_lesson11a
             Console.WriteLine("Deck contains: " + this.Count + "Cards");
             return firstCard;
         }
+        public Hand Deal5()
+        {
+            Card card;
+            Hand firstCard = new Hand();
+            for (int x = 0; x <= 4; x++)
+            {
+                card = this[x];
+                this.RemoveAt(0); //removes the top card
+                firstCard.Add(card);
+                
+        }
+            Console.WriteLine("Deck contains: " + this.Count + "Cards");
+            return firstCard;
+            
+           
+        }
     }
 }
+
+
 
 

@@ -30,7 +30,10 @@ namespace comp123_s2017_lesson11a
             Console.WriteLine(deck.ToString());
 
             hand.Add(deck.Deal1());
-            //hand = deck.Deal5(); //creates a new Hand object and assigns it to hand
+            Console.WriteLine(hand.ToString());
+            hand=deck.Deal5(); //creates a new Hand object and assigns it to hand
+            Console.WriteLine(hand.ToString());
+
         }
     }
 }

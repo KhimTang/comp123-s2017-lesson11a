@@ -9,9 +9,9 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="comp123_s2017_lesson11a.Deck">
-    <Position X="2.75" Y="3" Width="2" />
+    <Position X="3" Y="2.5" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAACAAAAAEAAAAAAQAAAAABAAAAAAAAAAAEAE=</HashCode>
+      <HashCode>AABAAAAAACAAAAAEAAAAAAQAAAAABAAAAAAAAAAAEAE=</HashCode>
       <FileName>Deck.cs</FileName>
     </TypeIdentifier>
   </Class>
