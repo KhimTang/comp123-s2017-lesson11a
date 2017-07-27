@@ -8,7 +8,7 @@ using System.Threading.Tasks;
  * Name: Khim Tang
  * Date: July 26. 2017
  * Description: This is a demo for Lesson 11
- * Version: 0.1 - Created the Project
+ * Version: 0.2 - Implement / tested the Deck class
 */
 
 namespace comp123_s2017_lesson11a
@@ -17,6 +17,8 @@ namespace comp123_s2017_lesson11a
     {
         static void Main(string[] args)
         {
+            Deck deck = new Deck();
+            Console.WriteLine(deck.ToString());
         }
     }
 }
