@@ -34,6 +34,8 @@ namespace comp123_s2017_lesson11a
             hand=deck.Deal5(); //creates a new Hand object and assigns it to hand
             Console.WriteLine(hand.ToString());
 
+            hand.HighestCards();
+
         }
     }
 }

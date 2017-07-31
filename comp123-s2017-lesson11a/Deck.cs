@@ -70,6 +70,34 @@ namespace comp123_s2017_lesson11a
             }
             return outputString;
         }
+
+        /// <summary>
+        /// This method removes a Card from element 0 in the List and return this Card
+        /// </summary>
+        /// <returns></returns>
+        public Card Deal1()
+        {
+            Card firstCard = (Card)this[0].Clone();
+            this.RemoveAt(0); //removes the top card
+            Console.WriteLine("Deck contains: " + this.Count + "Cards");
+            return firstCard;
+        }
+        public Hand Deal5()
+        {
+            Card card;
+            Hand firstCard = new Hand();
+            for (int x = 0; x <= 4; x++)
+            {
+                card = this[x];
+                this.RemoveAt(0); //removes the top card
+                firstCard.Add(card);
+
+            }
+            Console.WriteLine("Deck contains: " + this.Count + "Cards");
+            return firstCard;
+
+
+        }
         /// <summary>
         /// This method shuffles the deck by using random indices to select two cards a time
         /// It uses a Fisher-Yates like algorithm
@@ -92,33 +120,7 @@ namespace comp123_s2017_lesson11a
                 this[firstCard].Suit = tempCard.Suit;
             }
         }
-        /// <summary>
-        /// This method removes a Card from element 0 in the List and return this Card
-        /// </summary>
-        /// <returns></returns>
-        public Card Deal1()
-        {
-            Card firstCard = (Card)this[0].Clone();
-            this.RemoveAt(0); //removes the top card
-            Console.WriteLine("Deck contains: " + this.Count + "Cards");
-            return firstCard;
-        }
-        public Hand Deal5()
-        {
-            Card card;
-            Hand firstCard = new Hand();
-            for (int x = 0; x <= 4; x++)
-            {
-                card = this[x];
-                this.RemoveAt(0); //removes the top card
-                firstCard.Add(card);
-                
-        }
-            Console.WriteLine("Deck contains: " + this.Count + "Cards");
-            return firstCard;
-            
-           
-        }
+        
     }
 }
 

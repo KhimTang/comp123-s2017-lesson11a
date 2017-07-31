@@ -47,6 +47,16 @@ namespace comp123_s2017_lesson11a
             }
             return outputString;
         }
-        
+
+        public void HighestCards()
+        {
+            Card highestCard = (from card in this
+                                orderby card.Face descending
+                                select card).First();
+            Console.WriteLine("Highest card in hand: " + highestCard);
+            /* Max works with numeric values(properties). Face is of type enum */
+            // highestCard = this.Max(card => card.Face);
+        }
+
     }
 }

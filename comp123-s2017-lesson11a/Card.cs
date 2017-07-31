@@ -48,5 +48,9 @@ namespace comp123_s2017_lesson11a
             return new Card(this.Face, this.Suit);
         }
 
+        public override string ToString()
+        {
+            return string.Format("{0} of {1}", Face, Suit);
+        }
     }
 }
